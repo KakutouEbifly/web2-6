@@ -20,9 +20,9 @@
         document.body.appendChild( renderer.domElement );
         
         //リサイズの対応
-        window.addEventLister('resize', function() {
+        window.addEventListener('resize', function() {
           renderer.setSize( window.innerWidth, window.innerHeight);
-          camera.aspect = window.innerWidth/window.innerHeight;
+          camera.aspect = window.innerWidth / window.innerHeight;
           camera.updateProjectionMatrix();
         }, false);
         
