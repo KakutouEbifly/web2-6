@@ -12,8 +12,8 @@
   <body>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.min.js"></script>
     <script type="text/javascript">
-        var scene = new THREE/WebGLRender();
-        var camera = new THREE.PerspectiveCamera(75, window, innerHeight );
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000 );
         
         var renderer = new THREE.WebGLRenderer();
         renderer.setSize( window.innerWidth, window.innerHeight );
